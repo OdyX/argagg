@@ -1,0 +1,48 @@
+Source: argagg
+Section: devel
+Priority: extra
+Maintainer: Didier Raboud <odyx@debian.org> 
+Build-Depends:
+ debhelper (>= 10.2.5~),
+ cmake,
+ doxygen,
+Standards-Version: 4.1.0
+Homepage: https://github.com/vietjtnguyen/argagg
+
+Package: argagg-dev
+Architecture: all
+Depends: ${misc:Depends}
+Description: Argument Aggregator - Simple C++11 command line argument parser
+ This is yet another C++ command line argument/option parser. It was
+ written as a simple and idiomatic alternative to other frameworks like
+ getopt, Boost program options, TCLAP, and others. The goal is to achieve
+ the majority of argument parsing needs in a simple manner with an easy
+ to use API. It operates as a single pass over all arguments, recognizing
+ flags prefixed by - (short) or -- (long) and aggregating them into easy
+ to access structures with lots of convenience functions. It defers
+ processing types until you access them, so the result structures end up
+ just being pointers into the original command line argument C-strings.
+ .
+ argagg supports POSIX recommended argument syntax conventions.
+
+Package: argagg-dev-doc
+Architecture: all
+Multi-Arch: foreign
+Section: doc
+Depends:
+ libjs-jquery,
+ ${misc:Depends}
+Description: Argument Aggregator - Simple C++11 command line argument parser - source doc
+ This is yet another C++ command line argument/option parser. It was
+ written as a simple and idiomatic alternative to other frameworks like
+ getopt, Boost program options, TCLAP, and others. The goal is to achieve
+ the majority of argument parsing needs in a simple manner with an easy
+ to use API. It operates as a single pass over all arguments, recognizing
+ flags prefixed by - (short) or -- (long) and aggregating them into easy
+ to access structures with lots of convenience functions. It defers
+ processing types until you access them, so the result structures end up
+ just being pointers into the original command line argument C-strings.
+ .
+ argagg supports POSIX recommended argument syntax conventions.
+ .
+ This package contains the doxygen documentation for the argagg source code.

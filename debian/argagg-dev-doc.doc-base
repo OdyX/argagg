@@ -1,0 +1,10 @@
+Document: argagg-source-doc
+Title: Argagg source code documentation
+Author: Viet Nguyen <vietjtnguyen@gmail.com>
+Abstract: This is the Doxygen documentation for Argument Aggregator, a simple C++11 argument parser.
+Section: Programming
+
+Format: HTML
+Index: /usr/share/doc/argagg/html/index.html
+Files: /usr/share/doc/argagg/html/*.html
+
